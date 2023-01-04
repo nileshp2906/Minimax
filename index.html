@@ -1,0 +1,389 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Minimax</title>
+
+  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
+  <meta name="description" lang="en" content="">
+
+  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
+  <meta name="keywords" lang="en" content="">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!--container starts here-->
+  <div class="container">
+    <!--header starts here-->
+    <header class="header">
+      <div class="wrapper">
+        <h1>
+          <a href="./index.html" title="Minimax">Minimax</a>
+        </h1>
+        <div class="hamburger" id="hamburger-menu">
+          <span class="line" id="lines">Humberger Menu</span>
+        </div>
+        <nav id="nav">
+          <ul class="navbar" id="nav-bar">
+            <li class="navbarlist active" id="nav-bar-list">
+              <a href="#FIXME" title="Home">HOME</a>
+            </li>
+            <li class="navbarlist">
+              <a href="#FIXME" title="Service">SERVICE</a>
+            </li>
+            <li class="navbarlist">
+              <a href="#FIXME" title="About">ABOUT</a>
+            </li>
+            <li class="navbarlist">
+              <a href="#FIXME" title="Portfolio">PORTFOLIO</a>
+            </li>
+            <li class="navbarlist">
+              <a href="#FIXME" title="Price">PRICE</a>
+            </li>
+            <li class="navbarlist">
+              <a href="#FIXME" title="Contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--header ends here-->
+    <!--main starts here-->
+    <main>
+      <!-- BANNER SECTION START  HERE-->   
+      <section class="banner">
+        <div class="wrapper">
+          <figure class="banner-figure">
+            <img src="assets/img/home-bg.jpg" alt="Banner img" width="1360" height="460">
+          </figure>
+          <div class="banner-content">
+            <span class="welcome-txt">Welcome to</span>
+            <h2>Minimax<span class="content-bold-text">Digital Firm</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+            <a href="#FIXME" title="Get started" class="start-btn">GET STARTED</a>
+          </div>
+        </div>
+      </section>
+      <!-- BANNER SECTION END HERE -->
+
+      <!-- WORKFLOW SECTION START HERE-->
+      <section class="workflow bottom-line">
+        <div class="wrapper">
+          <div class="left-border">
+            <h3>Our Workflow</h3>
+          </div>
+          <ul class="workflow-steps">
+            <li class="wokflow-step">
+              <h4 class="research icon-style">Research</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+            </li>
+            <li class="wokflow-step">
+              <h4 class="design icon-style">Design</h4>
+              <p>This website template is brought to you by Tooplate. You can modify and use it for any website. You can change icons by looking at <a href="#FIXME" title="Example" class="example-text">examples</a></p>
+            </li>
+            <li class="wokflow-step">
+              <h4 class="implement icon-style">Implement</h4>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- WORKFLOW SECTION END HERE -->
+
+      <!-- MINIMAX-STORY START HERE -->
+      <section class="minimax-story bottom-line">
+        <div class="wrapper">
+          <div class="right-border">
+            <h3>Minimax Story</h3>
+          </div>
+          <div class="story-content">
+            <figure>
+              <img src="././assets/img/about-img.jpg" alt="About us" width="780" height="337">
+            </figure>
+            <div class="about-minimax">
+              <h4>ABOUT US</h4>
+              <span class="profession-txt">Talented Designers & Developers</span>
+              <p class="paragraph-top">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+              <p class="paragraph-bottom">Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- MINIMAX-STORY END HERE -->
+
+      <!-- OUR TEAM SECTION START HERE-->
+      <section class="our-team bottom-line">
+        <div class="wrapper">
+          <div class="left-border">
+            <h3>People behind the firm</h3>
+          </div>
+          <ul class="team-members">
+            <li class="team-member-list">
+              <figure>
+                <img src="./assets/img/team1.jpg" alt="Jonny Thinker img" width="207" height="192">      
+              </figure>
+              <h4><a href="#FIXME" title="Jonny Thinker">Jonny Thinker</a></h4>
+              <span class="profession-txt">Creative Director</span>
+            </li>
+            <li class="team-member-list">
+              <figure>
+                <img src="./assets/img/team2.jpg" alt="Michael img" width="207" height="192">
+              </figure>
+              <h4><a href="#FIXME" title="Michael">Michael</a></h4>     
+              <span class="profession-txt">CEO/Cc-founder</span>
+            </li>
+            <li class="team-member-list">
+              <figure>
+                <img src="./assets/img/team3.jpg" alt="George Walker img" width="207" height="192">
+              </figure>
+              <h4><a href="#FIXME" title="George Walker">George Walker</a></h4>
+              <span class="profession-txt">Chief Designer</span>
+            </li>
+            <li class="team-member-list">
+              <figure>
+                <img src="./assets/img/team4.jpg" alt="Mary Sandar img" width="207" height="192">
+              </figure>
+              <h4><a href="#FIXME" title="Mary Sandar">Mary Sandar</a></h4>
+              <span class="profession-txt">UX Specialist</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- OUR TEAM SECTION END HERE -->
+
+      <!-- OUR-PORTFOLIO SECTION START HERE -->
+      <section class="our-portfolio bottom-line">
+        <div class="wrapper">
+          <div class="right-border">
+            <h3>Our Portfolio</h3>
+          </div>
+          <ul class="portfolio-platforms">
+            <li class="platform-list active">
+              <a href="#FIXME" title="All">All</a>
+            </li>
+            <li class="platform-list">
+              <a href="#FIXME" title="Html">HTML</a>
+            </li>
+            <li class="platform-list">
+              <a href="#FIXME" title="Photoshop">Photoshop</a>
+            </li>
+            <li class="platform-list">
+              <a href="#FIXME" title="Wordpress">Wordpress</a>
+            </li>
+            <li class="platform-list">
+              <a href="#FIXME" title="Mobile">Mobile</a>
+            </li>
+          </ul>
+          <ul class="photo-gallery-list">
+            <li class="photos first-row">
+              <figure class="img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img1.jpg" alt="Portfolio images" width="315" height="211">
+                </a>
+              </figure>
+            </li>
+            <li class="photos first-row">
+              <figure class="img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img2.jpg" alt="Portfolio images" width="315" height="211">
+                </a>
+              </figure>
+            </li>
+            <li class="photos first-row">
+              <figure class="img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img3.jpg" alt="Portfolio images" width="315" height="211">
+                </a>
+              </figure>
+            </li>
+            <li class="photos second-row">
+              <figure class="big-img img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img4.jpg" alt="Portfolio images" width="483" height="321">
+                </a>
+              </figure>
+            </li>
+            <li class="photos second-row">
+              <figure class="big-img img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img5.jpg" alt="Portfolio images" width="483" height="321">
+                </a>
+              </figure>
+            </li>
+            <li class="photos third-row">
+              <figure class="img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img6.jpg" alt="Portfolio images" width="315" height="211">
+                </a>
+              </figure>
+            </li>
+            <li class="photos third-row">
+              <figure class="img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img7.jpg" alt="Portfolio images" width="315" height="211">
+                </a>
+              </figure>
+            </li>
+            <li class="photos third-row">
+              <figure class="img-hover">
+                <a href="#FIXEM" title="Portfolio img">
+                  <img src="./assets/img/portfolio-img8.jpg" alt="Portfolio images" width="315" height="211">
+                </a>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- OUR-PORTFOLIO SECTION-END HERE -->
+
+      <!-- PRICING SECTION START  HERE -->
+      <section class="pricing bottom-line">
+        <div class="wrapper">
+          <div class="left-border">
+            <h3>Our Pricing</h3>
+          </div>
+          <ul class="plan-list">
+            <li class="price-plan">
+              <div class="price-heading">
+                <h4>Starter</h4>
+                <span>&#36;100 per month</span>
+              </div>
+              <ul class="plan-features-list">
+                <li class="plan-features">100 GB STORAGE</li>
+                <li class="plan-features">10 TB BANDWIDTH </li>
+                <li class="plan-features">10 BASIC THEMES</li>
+                <li class="plan-features">24-HOUR RESPONSE</li>
+              </ul>
+              <a href="#FIXME" title="Sign up" class="sign-up-btn">Sign Up</a>
+            </li>
+            <li class="price-plan">
+              <div class="price-heading">
+                <h4>Business</h4>
+                <span>&#36;350 per month</span>
+              </div>
+              <ul class="plan-features-list">
+                <li class="plan-features">1,000 GB STORAGE</li>
+                <li class="plan-features">50 TB BANDWIDTH </li>
+                <li class="plan-features">50 BASIC THEMES</li>
+                <li class="plan-features">1-HOUR RESPONSE</li>
+              </ul>
+              <a href="#FIXME" title="Sign up" class="sign-up-btn">Sign Up</a>
+            </li>
+            <li class="price-plan">
+              <div class="price-heading">
+                <h4>Advanced</h4>
+                <span>&#36;500 per month</span>
+              </div>
+              <ul class="plan-features-list">
+                <li class="plan-features">2,000 GB STORAGE</li>
+                <li class="plan-features">100 TB BANDWIDTH </li>
+                <li class="plan-features">100 BASIC THEMES</li>
+                <li class="plan-features">30-MIN RESPONSE</li>
+              </ul>
+              <a href="#FIXME" title="Sign up" class="sign-up-btn">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- PRICING SECTION END HERE -->
+
+      <!-- USER DATA FORM SECTION START HERE -->
+      <section class="user-data-form bottom-line">
+        <div class="wrapper">
+          <div class="right-border">
+          <h3>Keep in touch</h3>
+          </div>
+          <form action="#FIXME" method="get" class="data-collect-form">
+            <div class="name input-style">
+              <input type="text" placeholder="Name" name="Name" class="user-name">
+            </div>
+            <div class="mail input-style">
+              <input type="email" placeholder="Email" name="Email" class="user-email">
+            </div>
+            <div class="subject input-style">
+              <input type="text" placeholder="Subject" name="Subject" class="user-subject">
+            </div>
+            <div class="message input-style">
+              <textarea name="Message" cols="30" rows="6" placeholder="Message" class="user-message"></textarea>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+            <div class="send-msg-btn">
+              <input type="submit" value="Send Message" name="Submit">
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- USER DATA FORM SECTION END HERE -->
+    </main>
+    <!--main ends here-->
+
+    <!--footer starts here-->
+    <footer>
+      <div class="wrapper">
+        <div class="footer-top bottom-line">
+          <div class="office">
+            <h5>Our Office</h5>
+            <address>101 Clean Street, California, CA 10110</address>
+            <span>Email
+              <a href="mailto:hello@company.com" title="Hello@company.com" class="email">hello@company.com</a>
+            </span>
+            <span>Phone
+              <a href="tel:010-020-0340" title="010-020-0340" class="phone">010-020-0340</a>
+            </span>
+          </div>
+          <div class="social-media">
+            <h5>Social Us</h5>
+            <ul class="soacil-icon-list">
+              <li class="social-icon">
+                <a href="#FIXME" title="Facebook" rel="noopener noreferrer" target="_blank" class="facebook icon-styles" >facebook</a>
+              </li>
+              <li class="social-icon">
+                <a href="#FIXME" title="Twitter" rel="noopener noreferrer" target="_blank" class="twitter icon-styles" >twitter</a>
+              </li>
+              <li class="social-icon">
+                <a href="#FIXME" title="Gmail" rel="noopener noreferrer" target="_blank" class="gmail icon-styles">gmail</a>
+              </li>
+              <li class="social-icon">
+                <a href="#FIXME" title="Google earth" rel="noopener noreferrer" target="_blank" class="google-earth icon-styles" >google earth</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="scroll-to-top">
+          <a href="#FIXME" title="Top" class="top-btn">Top</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p>Copyright &copy; 2016 Minimax Digital Firm - Design:
+            <a href="#FIXME" title="Tooplate" rel="noopener noreferrer" target="_blank" class="tooplate">Tooplate</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--footer ends here-->
+
+  </div>
+  <!--container ends here-->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
